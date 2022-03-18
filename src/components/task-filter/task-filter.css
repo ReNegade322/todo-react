@@ -1,0 +1,63 @@
+.task--filter{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    height: 40px;
+    background: white;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 20%), 0 8px 0 -3px #f6f6f6, 
+                0 9px 1px -3px rgb(0 0 0 / 20%), 0 16px 0 -6px #f6f6f6, 
+                0 17px 2px -6px rgb(0 0 0 / 20%);
+}
+
+.items--counter{
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 40px;
+}
+
+.filter--btn--group{
+    position: absolute;
+    left: 44%
+}
+
+.filter--btn{
+    height: 24px;
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 3px 7px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(88, 88, 88);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.clear--items{
+    color: rgb(88, 88, 88);
+    font-size: 14px;
+    font-weight: 300;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.hide--filter{
+    display: none;
+}
+
+.filter--btn:hover{
+    border: 1px solid rgba(221, 148, 148, 0.2);
+}
+
+.clear--items:hover{
+    text-decoration: underline
+}
+
+.btn--pressed{
+    border: 1px solid rgba(70, 1, 1, 0.2);
+}

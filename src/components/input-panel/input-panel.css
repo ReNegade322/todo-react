@@ -1,0 +1,38 @@
+.todo-input--form{
+    display: flex;
+}
+
+.todo-input{
+    box-sizing: border-box;
+    padding: 16px 16px 16px 60px;
+    border: none;
+    background: rgba(0, 0, 0, 0.003);
+    font-size: 24px;
+    margin: 0 auto;
+    background: white;
+    max-width: 550px;
+    width: 100%;
+    outline: none;
+
+}
+
+.checkbox--filler {
+    position: absolute;
+    height: 65px;
+    width: 45px;
+    border: none;
+    background: none;
+    background-image: url(./down--arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: none;
+    cursor: pointer; 
+}
+
+.hide--filler{
+    display: none;
+  }
+
+::placeholder{
+    color: rgb(230, 230, 230);
+}
