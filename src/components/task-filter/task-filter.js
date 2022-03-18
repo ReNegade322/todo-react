@@ -28,11 +28,11 @@ const TaskFilter = ({data, onFilterSelect, clearCompleted}) => {
                         onClick={() =>onFilterSelect('all')}>
                 All</button>
                 <button 
-                    className='filter--btn' 
+                    className='filter--btn btn--pressed' 
                     onClick={() =>onFilterSelect('active')}>
                 Active</button>
                 <button 
-                    className='filter--btn'
+                    className='filter--btn btn--pressed'
                     onClick={() =>onFilterSelect('completed')}>
                 Completed</button>
             </div>

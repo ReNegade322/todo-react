@@ -74,25 +74,27 @@ class App extends Component {
   }
 
   checkAll = () => {
-    this.setState(({data}) => {
-
-      const newArr = [...data]
-      let checkedCounter = 0
-      data.forEach(item => {
-        if (item.completed) {
-          checkedCounter++
+    const {data} = this.state
+    let checkedCouter = 0
+    data.forEach(item => {
+      if (item.completed) {
+        checkedCouter++
+      }
+    }) 
+    
+    this.setState(({data}) => ({
+      data: data.map((item) => {
+        if (checkedCouter === 0){
+          return{...item, completed: true}
+        } else if (checkedCouter === data.length){
+          return{...item, completed: false}
+        } else{
+          return{...item, completed: true}
         }
       })
-
-      newArr.forEach(item => {
-        
-      })
-
-      return {
-        data: newArr
-      }
-    })
+    }))
   }
+
 
 
 
